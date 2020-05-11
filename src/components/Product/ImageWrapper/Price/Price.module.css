@@ -1,0 +1,18 @@
+.container {
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    margin: 0 10px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: #32124c;
+}
+.container * {
+    outline: 0 none;
+}
