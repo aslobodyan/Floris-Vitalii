@@ -1,9 +1,7 @@
 # Andriy Slobodian's Test Task 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To see the result in your Browser please do next action:
-
-
+##Usage
 - Install `Node` + `NPM` + `Git` to your computer.
 - `git init`
 - `git clone git@github.com:aslobodyan/edsson-app.git`
