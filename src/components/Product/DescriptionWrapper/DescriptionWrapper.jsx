@@ -1,6 +1,9 @@
 import React from 'react';
 import css from './DescriptionWrapper.module.css';
 import TopSection from "./TopSection/TopSection";
+import TitleContainer from "./Title/TitleContainer";
+import Tags from "./Tags/Tags";
+import Description from "./Description/Description";
 import BottomSection from "./BottomSection/BottomSection";
 
 const DescriptionWrapper = () => {
@@ -10,8 +13,9 @@ const DescriptionWrapper = () => {
                 <TopSection />
             </div>
             <div className={css.content}>
-                {/*<Title />
-                <Description />*/}
+                <TitleContainer />
+                <Tags />
+                <Description />
             </div>
             <div className={css.bottomSection}>
                 <BottomSection />

@@ -3,7 +3,7 @@ import css from './ImageWrapper.module.css';
 import imgSource from './../../../assets/images/mouse.png';
 import SearchIcon from "./SearchIcon/SearchIcon";
 import LikeIcon from "./LikeIcon/LikeIcon";
-import Price from "./Price/Price";
+import PriceContainer from "./Price/PriceContainer";
 
 const ImageWrapper = () => {
     return (
@@ -11,7 +11,7 @@ const ImageWrapper = () => {
             <img src={imgSource} alt={'Some text'} />
             <SearchIcon />
             <LikeIcon />
-            <Price />
+            <PriceContainer />
         </div>
     );
 };

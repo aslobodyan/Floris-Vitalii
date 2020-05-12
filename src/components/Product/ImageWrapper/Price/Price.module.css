@@ -11,8 +11,13 @@
     font-size: 18px;
     font-weight: bold;
     border: 2px solid white;
+    overflow: hidden;
     background-color: #32124c;
 }
 .container * {
     outline: 0 none;
+}
+.editableDiv {
+    padding: 0 0 0 5px;
+    display: inline-block;
 }

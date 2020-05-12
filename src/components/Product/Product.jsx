@@ -1,9 +1,16 @@
 import React from 'react';
 import css from './Product.module.css';
-import ImageWrapper from "./ImageWrapper/ImageWrapper";
-import DescriptionWrapper from "./DescriptionWrapper/DescriptionWrapper";
+import ImageWrapper from './ImageWrapper/ImageWrapper';
+import DescriptionWrapper from './DescriptionWrapper/DescriptionWrapper';
+import * as PropTypes from 'prop-types';
 
 const Product = props => {
+    const { isInitialized } = props;
+
+    if (!isInitialized) {
+        return null;
+    }
+
     return (
         <div className={css.productSection}>
             <div className={css.productImageWrapper}>
@@ -14,6 +21,10 @@ const Product = props => {
             </div>
         </div>
     );
+};
+
+Product.propTypes = {
+    getProduct: PropTypes.func,
 };
 
 export default Product;

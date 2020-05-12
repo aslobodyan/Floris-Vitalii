@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import css from './Price.module.css';
-import ContentEditable from 'react-contenteditable'
+import ContentEditable from 'react-contenteditable';
+import * as PropTypes from 'prop-types';
 
-const Price = () => {
-    const [price, setPrice] = useState('$128.99');
-    const contentEditable = React.createRef();
+const Price = props => {
+    const editablePrice = useRef('');
+    const { price, setPrice } = props;
+
+    if (!price) {
+        return null;
+    }
+
+
+    editablePrice.current = String(price);
 
     const handleChange = (e) => {
         if (!e || !e.target) {
@@ -16,15 +24,19 @@ const Price = () => {
 
     return (
         <div className={css.container}>
+            <span>&euro;</span>
             <ContentEditable
-                innerRef={contentEditable}
-                html={price}                // innerHTML of the editable div
-                disabled={false}            // use true to disable editing
-                onChange={handleChange}     // handle innerHTML change
-                tagName='div'               // Use a custom HTML tag (uses a div by default)
+                className={css.editableDiv}
+                html={editablePrice.current}
+                onChange={handleChange}
             />
         </div>
     );
+};
+
+Price.propTypes = {
+    price: PropTypes.string,
+    setPrice: PropTypes.func,
 };
 
 export default Price;

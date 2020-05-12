@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const SearchIcon = () => {
     return (
         <div className={css.container}>
-            <FontAwesomeIcon icon={['fas', 'heart']} />
+            <FontAwesomeIcon icon={['fas', 'search']} />
         </div>
     );
 };
