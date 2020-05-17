@@ -2,9 +2,9 @@ import React from 'react';
 import css from './DescriptionWrapper.module.css';
 import TopSection from "./TopSection/TopSection";
 import TitleContainer from "./Title/TitleContainer";
-import Tags from "./Tags/Tags";
-import Description from "./Description/Description";
-import BottomSection from "./BottomSection/BottomSection";
+import OffererContainer from "./Offerer/OffererContainer";
+import DescriptionContainer from "./Description/DescriptionContainer";
+import BottomSectionContainer from "./BottomSection/BottomSectionContainer";
 
 const DescriptionWrapper = () => {
     return (
@@ -14,11 +14,11 @@ const DescriptionWrapper = () => {
             </div>
             <div className={css.content}>
                 <TitleContainer />
-                <Tags />
-                <Description />
+                <OffererContainer />
+                <DescriptionContainer />
             </div>
             <div className={css.bottomSection}>
-                <BottomSection />
+                <BottomSectionContainer />
             </div>
         </div>
     );

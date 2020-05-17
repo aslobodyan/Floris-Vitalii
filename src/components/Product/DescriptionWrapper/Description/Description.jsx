@@ -1,10 +1,13 @@
 import React from 'react';
 import css from './Description.module.css';
+import ReactHtmlParser from 'react-html-parser';
 
-const Description = () => {
+const Description = props => {
+    const { text } = props;
+
     return (
         <div className={css.container}>
-            {'Some test text is hardcoded for now. Later it will come from API.'}
+            { ReactHtmlParser(text) }
         </div>
     );
 };

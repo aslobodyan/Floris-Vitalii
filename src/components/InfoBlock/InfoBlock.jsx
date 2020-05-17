@@ -31,8 +31,8 @@ const InfoBlock = () => {
 
             <h3>Additional info:</h3>
             <ul className={css.listStyle}>
-                <li>Spent ~<b>3 hours</b> yesterday in the evening and ~<b>3 hours</b> today in the evening.</li>
-                <li>There is UX Error in design: price has dark background and Image consists of dark element. I added white border for price ... to avoid overlapping both dark colors and to make them readable.</li>
+                <li>Spent totally: ~<b>12 hours</b></li>
+                <li>There is UX Error in design: price has dark background and Image consists of dark element. I added white border for price ... to avoid overlapping both dark colors and to make them more readable.</li>
             </ul>
         </div>
     );

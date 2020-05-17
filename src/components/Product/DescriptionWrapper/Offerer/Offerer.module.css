@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    max-width: 30px;
+    max-height: 30px;
+    background-color: grey;
+}
+.name {
+    padding: 0 0 0 10px;
+    line-height: 30px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    color: #32124c;
+}
+

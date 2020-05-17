@@ -3,5 +3,38 @@
     height: 30px;
     padding: 0;
     margin: 0;
-    background-color: burlywood;
+}
+.container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.container li {
+    margin: 0 5px;
+    flex: 20%;
+}
+.container li a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    flex: 20%;
+    color: grey;
+    text-decoration: none;
+    border-top: 2px solid white;
+}
+.container li:last-child a,
+.container li:last-child a.active {
+    text-align: right;
+    border-top: 0 none;
+}
+.container li a.active {
+    border-top: 2px solid green;
+}
+
+
+
+.info {
+    padding: 0 0 0 5px;
+    margin: 0;
 }

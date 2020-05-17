@@ -1,25 +1,36 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import css from './App.module.css';
-import Button from '../Button/Button';
+import Button from '../_COMMON/Button/Button';
 import InfoBlock from '../InfoBlock/InfoBlock';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronLeft, faSearch, faHeart } from '@fortawesome/free-solid-svg-icons';
 import ProductContainer from '../Product/ProductContainer';
 import {initializeApp} from '../../redux/reducers/mainReducer';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+    faChevronLeft, faSearch, faHeart, faProjectDiagram, faPlus,
+    faInfoCircle, faComment, faShoppingBag, faEllipsisV
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faChevronLeft, faSearch, faHeart);
+library.add(
+    faChevronLeft, faSearch, faHeart,
+    faProjectDiagram, faPlus, faInfoCircle,
+    faComment, faShoppingBag, faEllipsisV
+);
 
 const App = props => {
     const { isInitialized, initializeApp } = props;
 
-    initializeApp();
+    useEffect(() => {
+        if (!isInitialized) {
+            initializeApp();
+        }
+    });
 
     return (
         <div className={css.container}>
-            <h2 className={css.header}>Not ready yet, but is ok to track the Progress.</h2>
-            <Button />
+            <h2 className={css.header + ' ' + css.green}>Finished, can be reviewed.</h2>
+            <Button text={'Button translation key'} icon={'chevron-left'} />
             {isInitialized && <ProductContainer />}
             <InfoBlock />
         </div>
