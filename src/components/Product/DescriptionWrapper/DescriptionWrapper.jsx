@@ -2,9 +2,9 @@ import React from 'react';
 import css from './DescriptionWrapper.module.css';
 import TopSection from "./TopSection/TopSection";
 import TitleContainer from "./Title/TitleContainer";
-import OffererContainer from "./Offerer/OffererContainer";
 import DescriptionContainer from "./Description/DescriptionContainer";
 import BottomSectionContainer from "./BottomSection/BottomSectionContainer";
+import OffererContainer from "./Offerer/OffererContainer";
 
 const DescriptionWrapper = () => {
     return (

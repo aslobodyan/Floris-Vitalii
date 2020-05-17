@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 
 const mapStateToProps = state => {
     return {
-        text: state.mainReducer.description || 'Some text',
+        text: state.mainReducer.description,
     };
 };
 

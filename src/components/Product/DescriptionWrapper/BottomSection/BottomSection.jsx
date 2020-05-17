@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import css from './BottomSection.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
+import * as PropTypes from 'prop-types';
 
 const BottomSection = props => {
     const { mockedData, getTemplateData } = props;
@@ -34,6 +35,11 @@ const BottomSection = props => {
             </ul>
         </div>
     );
+};
+
+BottomSection.propTypes = {
+    mockedData: PropTypes.array,
+    getTemplateData: PropTypes.func,
 }
 
 export default BottomSection;

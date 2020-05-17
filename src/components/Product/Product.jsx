@@ -24,7 +24,7 @@ const Product = props => {
 };
 
 Product.propTypes = {
-    getProduct: PropTypes.func,
+    isInitialized: PropTypes.bool,
 };
 
 export default Product;

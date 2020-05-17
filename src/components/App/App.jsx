@@ -11,6 +11,7 @@ import {
     faChevronLeft, faSearch, faHeart, faProjectDiagram, faPlus,
     faInfoCircle, faComment, faShoppingBag, faEllipsisV
 } from '@fortawesome/free-solid-svg-icons';
+import * as PropTypes from 'prop-types';
 
 library.add(
     faChevronLeft, faSearch, faHeart,
@@ -35,6 +36,11 @@ const App = props => {
             <InfoBlock />
         </div>
     );
+}
+
+App.propTypes = {
+    isInitialized: PropTypes.bool,
+    initializeApp: PropTypes.func,
 }
 
 const mapStateToProps = (state) => {

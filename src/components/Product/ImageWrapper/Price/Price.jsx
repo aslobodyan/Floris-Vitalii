@@ -4,13 +4,12 @@ import ContentEditable from 'react-contenteditable';
 import * as PropTypes from 'prop-types';
 
 const Price = props => {
-    const editablePrice = useRef('');
     const { price, setPrice } = props;
+    const editablePrice = useRef('');
 
     if (!price) {
         return null;
     }
-
 
     editablePrice.current = String(price);
 

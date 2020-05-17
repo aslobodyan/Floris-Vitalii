@@ -1,5 +1,5 @@
-import Offerer from "./Offerer";
-import {connect} from "react-redux";
+import Offerer from './Offerer';
+import {connect} from 'react-redux';
 
 const mapStateToProps = state => {
     return {
